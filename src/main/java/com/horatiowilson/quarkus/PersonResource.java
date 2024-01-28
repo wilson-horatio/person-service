@@ -25,7 +25,7 @@ public class PersonResource {
 
     @GET
     public List<Person> getAll() throws Exception {
-        return Person.findAll(Sort.ascending("last_name")).list();
+        return Person.findAll(Sort.ascending("lastName")).list();
     }
 
     @GET
